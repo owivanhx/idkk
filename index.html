@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cole</title>
-    <!-- Fonte retro pixel / mono -->
+    <link rel="icon" type="image/x-icon" href="cake.png">
     <link href="https://fonts.googleapis.com/css2?family=VT323&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
+        /* Personalização da Seleção de Texto */
+        ::selection {
+            background-color: #ffccd5; /* Rosa claro pastel */
+            color: #5c434a;            /* Texto em tom escuro rosado para boa leitura */
+        }
+        
+        ::-moz-selection {
+            background-color: #ffccd5;
+            color: #5c434a;
+        }
+
         /* Estilos Globais e Fundo */
         * {
             box-sizing: border-box;
@@ -16,14 +27,12 @@
         }
 
         body {
-            /* Fundo rosa bem clarinho */
             background-color: #fff0f3;
-            /* Padrão de fundo pontilhado em tom rosa pastel */
             background-image: 
                 radial-gradient(#ffccd5 1px, transparent 1px);
             background-size: 8px 8px;
             font-family: 'Courier Prime', monospace;
-            color: #5c434a; /* Texto em tom marrom/rosa escuro suave */
+            color: #5c434a;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -49,7 +58,7 @@
         header h1 {
             font-family: 'VT323', monospace;
             font-size: 4rem;
-            color: #ffb3c1; /* Rosa pastel suave */
+            color: #ffb3c1;
             letter-spacing: 2px;
             text-shadow: 2px 2px 0px #fff;
         }
@@ -61,7 +70,7 @@
             width: 100%;
         }
 
-        /* Coluna da Esquerda (Mais Estreita) */
+        /* Coluna da Esquerda */
         .left-column {
             width: 200px;
             display: flex;
@@ -69,7 +78,7 @@
             gap: 12px;
         }
 
-        /* Coluna da Direita (Conteúdo Principal) */
+        /* Coluna da Direita */
         .right-column {
             flex: 1;
             display: flex;
@@ -130,7 +139,6 @@
             width: 100%;
             height: 200px;
             object-fit: cover;
-            /* Filtro com leve tom rosado/duotone */
             filter: sepia(30%) hue-rotate(300deg) brightness(105%) contrast(90%);
             border-bottom: 1px solid #ffccd5;
             display: block;
@@ -160,7 +168,6 @@
             padding-right: 5px;
         }
 
-        /* Destaque para o nome */
         .highlight {
             background: #ffe5ec;
             padding: 0 4px;
@@ -201,7 +208,6 @@
             <!-- Coluna Esquerda -->
             <div class="left-column">
                 
-                <!-- Janela de Navegação -->
                 <div class="window">
                     <div class="window-header">NAVI</div>
                     <div class="window-body">
@@ -218,7 +224,6 @@
                     </div>
                 </div>
 
-                <!-- Janela de Status / Frase -->
                 <div class="window">
                     <div class="window-header">STATUS</div>
                     <div class="window-body">
@@ -226,7 +231,6 @@
                     </div>
                 </div>
 
-                <!-- Janela de Gadgets / Webring -->
                 <div class="window">
                     <div class="window-header">WEBRINGS</div>
                     <div class="window-body" style="text-align: center;">
@@ -242,7 +246,6 @@
             <!-- Coluna Direita -->
             <div class="right-column">
                 
-                <!-- Janela Principal -->
                 <div class="window">
                     <div class="window-header">WELCOME</div>
                     <img src="https://images.unsplash.com/photo-1509114397022-ed747cca3f65?q=80&w=600" alt="Header Image" class="featured-img">
@@ -255,7 +258,6 @@
                     </div>
                 </div>
 
-                <!-- Janela de Updates -->
                 <div class="window">
                     <div class="window-header">UPDATES</div>
                     <div class="window-body">
