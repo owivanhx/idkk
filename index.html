@@ -6,20 +6,23 @@
     <title>cole</title>
     <link rel="icon" type="image/x-icon" href="cake.png">
     <link href="https://fonts.googleapis.com/css2?family=VT323&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
-    
     <style>
-        /* Personalização da Seleção de Texto */
+        /* ================================
+           SELEÇÃO DE TEXTO
+        ================================= */
         ::selection {
-            background-color: #ffccd5; /* Rosa claro pastel */
-            color: #5c434a;            /* Texto em tom escuro rosado para boa leitura */
+            background-color: #ffccd5;
+            color: #5c434a;
         }
-        
+
         ::-moz-selection {
             background-color: #ffccd5;
             color: #5c434a;
         }
 
-        /* Estilos Globais e Fundo */
+        /* ================================
+           CONFIGURAÇÕES GERAIS
+        ================================= */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -28,8 +31,7 @@
 
         body {
             background-color: #fff0f3;
-            background-image: 
-                radial-gradient(#ffccd5 1px, transparent 1px);
+            background-image: radial-gradient(#ffccd5 1px, transparent 1px);
             background-size: 8px 8px;
             font-family: 'Courier Prime', monospace;
             color: #5c434a;
@@ -40,7 +42,9 @@
             padding: 40px 20px;
         }
 
-        /* Container Principal do Site */
+        /* ================================
+           CONTAINER PRINCIPAL
+        ================================= */
         .wrapper {
             width: 100%;
             max-width: 750px;
@@ -49,7 +53,9 @@
             align-items: center;
         }
 
-        /* Banner / Título do Topo */
+        /* ================================
+           TÍTULO
+        ================================= */
         header {
             margin-bottom: 20px;
             text-align: center;
@@ -63,14 +69,16 @@
             text-shadow: 2px 2px 0px #fff;
         }
 
-        /* Layout em Duas Colunas */
+        /* ================================
+           DUAS COLUNAS
+        ================================= */
         .main-container {
             display: flex;
             gap: 15px;
             width: 100%;
         }
 
-        /* Coluna da Esquerda */
+        /* COLUNA ESQUERDA */
         .left-column {
             width: 200px;
             display: flex;
@@ -78,7 +86,7 @@
             gap: 12px;
         }
 
-        /* Coluna da Direita */
+        /* COLUNA DIREITA */
         .right-column {
             flex: 1;
             display: flex;
@@ -86,7 +94,9 @@
             gap: 12px;
         }
 
-        /* Estilo das Janelinhas / Caixas Retro */
+        /* ================================
+           JANELINHAS
+        ================================= */
         .window {
             background-color: #ffffff;
             border: 1px solid #ffccd5;
@@ -94,7 +104,7 @@
             font-size: 0.85rem;
         }
 
-        /* Barra de Título da Janela */
+        /* BARRA DAS JANELAS */
         .window-header {
             background-color: #ffe5ec;
             border-bottom: 1px solid #ffccd5;
@@ -107,11 +117,14 @@
             color: #c97a8e;
         }
 
+        /* CONTEÚDO */
         .window-body {
             padding: 10px;
         }
 
-        /* Estilo do Menu de Navegação */
+        /* ================================
+           MENU
+        ================================= */
         .nav-list {
             list-style: none;
             text-align: right;
@@ -134,7 +147,9 @@
             color: #ff85a1;
         }
 
-        /* Imagem de Destaque */
+        /* ================================
+           SLIDESHOW DO COLE
+        ================================= */
         .featured-img {
             width: 100%;
             height: 200px;
@@ -142,9 +157,79 @@
             filter: sepia(30%) hue-rotate(300deg) brightness(105%) contrast(90%);
             border-bottom: 1px solid #ffccd5;
             display: block;
+            opacity: 1;
+            transition: opacity 0.6s ease-in-out;
         }
 
-        /* Caixa de Updates / Log de Atualizações */
+        /* ================================
+           STATUS
+        ================================= */
+        .status-text {
+            font-size: 0.75rem;
+            color: #8a5a65;
+            line-height: 1.3;
+        }
+
+        /* ================================
+           MY SITE
+        ================================= */
+        .my-site {
+            text-align: center;
+        }
+
+        .my-site p {
+            font-size: 0.7rem;
+            margin-bottom: 5px;
+            color: #8a5a65;
+        }
+
+        .my-site img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .my-site span {
+            font-size: 1.2rem;
+            color: #ff85a1;
+            display: block;
+            font-weight: bold;
+        }
+
+        /* ================================
+           TEXTO DE BOAS-VINDAS
+        ================================= */
+        .welcome-title {
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .welcome-text {
+            font-size: 0.8rem;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .welcome-small {
+            font-size: 0.7rem;
+            color: #c97a8e;
+        }
+
+        /* DESTAQUE */
+        .highlight {
+            background: #ffe5ec;
+            padding: 0 4px;
+            color: #c97a8e;
+            font-weight: bold;
+        }
+
+        /* ================================
+           UPDATES
+        ================================= */
         .updates-box {
             background: #fff8f9;
             border: 1px solid #ffe5ec;
@@ -166,16 +251,12 @@
             color: #c97a8e;
             border-right: 1px solid #ffccd5;
             padding-right: 5px;
+            white-space: nowrap;
         }
 
-        .highlight {
-            background: #ffe5ec;
-            padding: 0 4px;
-            color: #c97a8e;
-            font-weight: bold;
-        }
-
-        /* Footer / Rodapé */
+        /* ================================
+           FOOTER
+        ================================= */
         footer {
             margin-top: 20px;
             text-align: center;
@@ -183,31 +264,45 @@
             color: #c97a8e;
         }
 
-        /* Responsividade para Telas Pequenas */
+        footer p:last-child {
+            font-size: 0.65rem;
+            margin-top: 3px;
+        }
+
+        /* ================================
+           RESPONSIVIDADE
+        ================================= */
         @media (max-width: 600px) {
             .main-container {
                 flex-direction: column;
             }
+
             .left-column {
                 width: 100%;
+            }
+
+            header h1 {
+                font-size: 3rem;
+            }
+
+            .featured-img {
+                height: 200px;
             }
         }
     </style>
 </head>
 <body>
-
     <div class="wrapper">
-        <!-- Título Superior -->
         <header>
-            <h1>claiey*</h1>
+            <h1>cole brookstone</h1>
         </header>
 
-        <!-- Conteúdo Principal -->
         <div class="main-container">
-            
-            <!-- Coluna Esquerda -->
+
+            <!-- COLUNA ESQUERDA -->
             <div class="left-column">
-                
+
+                <!-- MENU -->
                 <div class="window">
                     <div class="window-header">NAVI</div>
                     <div class="window-body">
@@ -224,41 +319,55 @@
                     </div>
                 </div>
 
+                <!-- STATUS -->
                 <div class="window">
                     <div class="window-header">STATUS</div>
                     <div class="window-body">
-                        <p style="font-size: 0.75rem; color: #8a5a65;">☁ 108 days ago<br>the grief is never ending but so is the love</p>
+                        <p class="status-text">
+                            ☁ 108 days ago<br>
+                            the grief is never ending but so is the love
+                        </p>
                     </div>
                 </div>
 
+                <!-- MY SITE -->
                 <div class="window">
                     <div class="window-header">MY SITE</div>
-                    <div class="window-body" style="text-align: center;">
+                    <div class="window-body my-site">
                         <a href="https://owivanhx.github.io/owivan/" style="text-decoration: none; color: inherit;">
-                            <p style="font-size: 0.7rem; margin-bottom: 5px; color: #8a5a65;">this is my personal site</p>
-                            <img src="raccoon.jpg" alt="owivan" style="max-width: 100%; height: auto; border-radius: 4px; margin-bottom: 5px;">
-                            <span style="font-size: 1.2rem; color: #ff85a1; display: block; font-weight: bold;">owivan</span>
+                            <p>this is my personal site</p>
+                            <img src="raccoon.jpg" alt="owivan">
+                            <span>owivan</span>
                         </a>
                     </div>
                 </div>
 
             </div>
 
-            <!-- Coluna Direita -->
+            <!-- COLUNA DIREITA -->
             <div class="right-column">
-                
+
+                <!-- WELCOME -->
                 <div class="window">
                     <div class="window-header">WELCOME</div>
-                    <img src="♡.jpg" alt="colee" class="featured-img">
+
+                    <!-- SLIDESHOW DO COLE -->
+                    <img src="cole1.jpg" alt="Cole de Ninjago" class="featured-img" id="cole-image">
+
                     <div class="window-body">
-                        <h2 style="font-size: 1rem; margin-bottom: 8px;">hello . . . i'm <span class="highlight">clay</span>.</h2>
-                        <p style="font-size: 0.8rem; line-height: 1.4; margin-bottom: 10px;">
+                        <h2 class="welcome-title">
+                            hello . . . i'm <span class="highlight">clay</span>.
+                        </h2>
+                        <p class="welcome-text">
                             this is a personal website that i've been constructing off & on for roughly 3 years. i post blog entries and other things. enjoy your stay! ✶
                         </p>
-                        <p style="font-size: 0.7rem; color: #c97a8e;">This site was created solely for computer viewing in mind.</p>
+                        <p class="welcome-small">
+                            This site was created solely for computer viewing in mind.
+                        </p>
                     </div>
                 </div>
 
+                <!-- UPDATES -->
                 <div class="window">
                     <div class="window-header">UPDATES</div>
                     <div class="window-body">
@@ -287,12 +396,45 @@
 
         </div>
 
-        <!-- Rodapé -->
+        <!-- FOOTER -->
         <footer>
             <p>★ claiey // 2022-2025 ★</p>
-            <p style="font-size: 0.65rem; margin-top: 3px;">you're visitor #</p>
+            <p>you're visitor #</p>
         </footer>
+
     </div>
+
+    <!-- =====================================
+         SCRIPT DO SLIDESHOW
+    ====================================== -->
+    <script>
+        // Certifique-se de salvar suas imagens no mesmo diretório do arquivo HTML
+        const imagensCole = [
+            "cole1.jpg",
+            "cole2.jpg",
+            "cole3.jpg",
+            "cole4.jpg",
+            "cole5.jpg"
+        ];
+
+        const imagem = document.getElementById("cole-image");
+        let imagemAtual = 0;
+        const tempoTroca = 3000; // Tempo em milissegundos (3000 = 3 segundos)
+
+        setInterval(() => {
+            // Inicia a transição de saída (fade out)
+            imagem.style.opacity = "0";
+
+            setTimeout(() => {
+                // Alterna a imagem
+                imagemAtual = (imagemAtual + 1) % imagensCole.length;
+                imagem.src = imagensCole[imagemAtual];
+
+                // Inicia a transição de entrada (fade in)
+                imagem.style.opacity = "1";
+            }, 600); // 600ms igual ao tempo da transição no CSS
+        }, tempoTroca);
+    </script>
 
 </body>
 </html>
