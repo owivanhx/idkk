@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>claiey*</title>
+    <!-- Fonte retro pixel / mono -->
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Estilos Globais e Fundo */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #e5e5e5;
+            /* Padrão de fundo quadriculado/pontilhado sutil */
+            background-image: 
+                radial-gradient(#bbb 1px, transparent 1px);
+            background-size: 8px 8px;
+            font-family: 'Courier Prime', monospace;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal do Site */
+        .wrapper {
+            width: 100%;
+            max-width: 750px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Banner / Título do Topo */
+        header {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'VT323', monospace;
+            font-size: 4rem;
+            color: #888;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 0px #fff;
+        }
+
+        /* Layout em Duas Colunas */
+        .main-container {
+            display: flex;
+            gap: 15px;
+            width: 100%;
+        }
+
+        /* Coluna da Esquerda (Mais Estreita) */
+        .left-column {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        /* Coluna da Direita (Conteúdo Principal) */
+        .right-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        /* Estilo das Janelinhas / Caixas Retro */
+        .window {
+            background-color: #fff;
+            border: 1px solid #999;
+            box-shadow: 2px 2px 0px #ccc;
+            font-size: 0.85rem;
+        }
+
+        /* Barra de Título da Janela */
+        .window-header {
+            background-color: #d8d8d8;
+            border-bottom: 1px solid #aaa;
+            padding: 3px 8px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #555;
+        }
+
+        .window-body {
+            padding: 10px;
+        }
+
+        /* Estilo do Menu de Navegação */
+        .nav-list {
+            list-style: none;
+            text-align: right;
+        }
+
+        .nav-list li {
+            margin-bottom: 4px;
+        }
+
+        .nav-list a {
+            color: #444;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .nav-list a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+
+        /* Imagem de Destaque P&B */
+        .featured-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            filter: grayscale(100%) contrast(120%);
+            border-bottom: 1px solid #ccc;
+            display: block;
+        }
+
+        /* Caixa de Updates / Log de Atualizações */
+        .updates-box {
+            background: #fafafa;
+            border: 1px solid #ddd;
+            padding: 8px;
+            height: 120px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 0.75rem;
+            line-height: 1.4;
+        }
+
+        .update-item {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 4px;
+        }
+
+        .update-date {
+            color: #777;
+            border-right: 1px solid #ccc;
+            padding-right: 5px;
+        }
+
+        /* Footer / Rodapé */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.75rem;
+            color: #777;
+        }
+
+        /* Responsividade para Telas Pequenas */
+        @media (max-width: 600px) {
+            .main-container {
+                flex-direction: column;
+            }
+            .left-column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Título Superior -->
+        <header>
+            <h1>claiey*</h1>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <div class="main-container">
+            
+            <!-- Coluna Esquerda -->
+            <div class="left-column">
+                
+                <!-- Janela de Navegação -->
+                <div class="window">
+                    <div class="window-header">NAVI</div>
+                    <div class="window-body">
+                        <ul class="nav-list">
+                            <li><a href="#">★ HOME</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">PHOTOLOG</a></li>
+                            <li><a href="#">LINKS</a></li>
+                            <li><a href="#">SHRINES</a></li>
+                            <li><a href="#">DIRECTORY</a></li>
+                            <li><a href="#">GUESTBOOK</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Janela de Status / Frase -->
+                <div class="window">
+                    <div class="window-header">STATUS</div>
+                    <div class="window-body">
+                        <p style="font-size: 0.75rem;">☁ 108 days ago<br>the grief is never ending but so is the love</p>
+                    </div>
+                </div>
+
+                <!-- Janela de Gadgets / Webring -->
+                <div class="window">
+                    <div class="window-header">WEBRINGS</div>
+                    <div class="window-body" style="text-align: center;">
+                        <p style="font-size: 0.7rem; margin-bottom: 5px;">WiiRing</p>
+                        <div style="border: 1px solid #ccc; padding: 10px; background: #f9f9f9;">
+                            <span style="font-size: 1.5rem;">⚇</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Coluna Direita -->
+            <div class="right-column">
+                
+                <!-- Janela Principal -->
+                <div class="window">
+                    <div class="window-header">WELCOME</div>
+                    <!-- Substitua o link da imagem abaixo pela sua imagem -->
+                    <img src="https://images.unsplash.com/photo-1509114397022-ed747cca3f65?q=80&w=600" alt="Header Image" class="featured-img">
+                    <div class="window-body">
+                        <h2 style="font-size: 1rem; margin-bottom: 8px;">hello . . . i'm <span style="background: #eee; padding: 0 4px;">clay</span>.</h2>
+                        <p style="font-size: 0.8rem; line-height: 1.4; margin-bottom: 10px;">
+                            this is a personal website that i've been constructing off & on for roughly 3 years. i post blog entries and other things. enjoy your stay! ✶
+                        </p>
+                        <p style="font-size: 0.7rem; color: #666;">This site was created solely for computer viewing in mind.</p>
+                    </div>
+                </div>
+
+                <!-- Janela de Updates -->
+                <div class="window">
+                    <div class="window-header">UPDATES</div>
+                    <div class="window-body">
+                        <div class="updates-box">
+                            <div class="update-item">
+                                <span class="update-date">5.28.25</span>
+                                <span>added photo log page.</span>
+                            </div>
+                            <div class="update-item">
+                                <span class="update-date">11.20.25</span>
+                                <span>new shrine.</span>
+                            </div>
+                            <div class="update-item">
+                                <span class="update-date">11.25.25</span>
+                                <span>small overhaul & added site directory.</span>
+                            </div>
+                            <div class="update-item">
+                                <span class="update-date">5.10.25</span>
+                                <span>added shrines page.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>★ claiey // 2022-2025 ★</p>
+            <p style="font-size: 0.65rem; margin-top: 3px;">you're visitor #</p>
+        </footer>
+    </div>
+
+</body>
+</html>
