@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>claiey*</title>
+    <title>cole</title>
     <!-- Fonte retro pixel / mono -->
     <link href="https://fonts.googleapis.com/css2?family=VT323&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     
@@ -16,13 +16,14 @@
         }
 
         body {
-            background-color: #e5e5e5;
-            /* Padrão de fundo quadriculado/pontilhado sutil */
+            /* Fundo rosa bem clarinho */
+            background-color: #fff0f3;
+            /* Padrão de fundo pontilhado em tom rosa pastel */
             background-image: 
-                radial-gradient(#bbb 1px, transparent 1px);
+                radial-gradient(#ffccd5 1px, transparent 1px);
             background-size: 8px 8px;
             font-family: 'Courier Prime', monospace;
-            color: #333;
+            color: #5c434a; /* Texto em tom marrom/rosa escuro suave */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -48,9 +49,9 @@
         header h1 {
             font-family: 'VT323', monospace;
             font-size: 4rem;
-            color: #888;
+            color: #ffb3c1; /* Rosa pastel suave */
             letter-spacing: 2px;
-            text-shadow: 1px 1px 0px #fff;
+            text-shadow: 2px 2px 0px #fff;
         }
 
         /* Layout em Duas Colunas */
@@ -78,23 +79,23 @@
 
         /* Estilo das Janelinhas / Caixas Retro */
         .window {
-            background-color: #fff;
-            border: 1px solid #999;
-            box-shadow: 2px 2px 0px #ccc;
+            background-color: #ffffff;
+            border: 1px solid #ffccd5;
+            box-shadow: 3px 3px 0px #ffb3c1;
             font-size: 0.85rem;
         }
 
         /* Barra de Título da Janela */
         .window-header {
-            background-color: #d8d8d8;
-            border-bottom: 1px solid #aaa;
-            padding: 3px 8px;
+            background-color: #ffe5ec;
+            border-bottom: 1px solid #ffccd5;
+            padding: 4px 8px;
             font-size: 0.75rem;
             font-weight: bold;
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: #555;
+            color: #c97a8e;
         }
 
         .window-body {
@@ -112,7 +113,7 @@
         }
 
         .nav-list a {
-            color: #444;
+            color: #8a5a65;
             text-decoration: none;
             font-weight: bold;
             font-size: 0.8rem;
@@ -121,23 +122,24 @@
 
         .nav-list a:hover {
             text-decoration: underline;
-            color: #000;
+            color: #ff85a1;
         }
 
-        /* Imagem de Destaque P&B */
+        /* Imagem de Destaque */
         .featured-img {
             width: 100%;
             height: 200px;
             object-fit: cover;
-            filter: grayscale(100%) contrast(120%);
-            border-bottom: 1px solid #ccc;
+            /* Filtro com leve tom rosado/duotone */
+            filter: sepia(30%) hue-rotate(300deg) brightness(105%) contrast(90%);
+            border-bottom: 1px solid #ffccd5;
             display: block;
         }
 
         /* Caixa de Updates / Log de Atualizações */
         .updates-box {
-            background: #fafafa;
-            border: 1px solid #ddd;
+            background: #fff8f9;
+            border: 1px solid #ffe5ec;
             padding: 8px;
             height: 120px;
             overflow-y: auto;
@@ -153,9 +155,17 @@
         }
 
         .update-date {
-            color: #777;
-            border-right: 1px solid #ccc;
+            color: #c97a8e;
+            border-right: 1px solid #ffccd5;
             padding-right: 5px;
+        }
+
+        /* Destaque para o nome */
+        .highlight {
+            background: #ffe5ec;
+            padding: 0 4px;
+            color: #c97a8e;
+            font-weight: bold;
         }
 
         /* Footer / Rodapé */
@@ -163,7 +173,7 @@
             margin-top: 20px;
             text-align: center;
             font-size: 0.75rem;
-            color: #777;
+            color: #c97a8e;
         }
 
         /* Responsividade para Telas Pequenas */
@@ -212,7 +222,7 @@
                 <div class="window">
                     <div class="window-header">STATUS</div>
                     <div class="window-body">
-                        <p style="font-size: 0.75rem;">☁ 108 days ago<br>the grief is never ending but so is the love</p>
+                        <p style="font-size: 0.75rem; color: #8a5a65;">☁ 108 days ago<br>the grief is never ending but so is the love</p>
                     </div>
                 </div>
 
@@ -220,9 +230,9 @@
                 <div class="window">
                     <div class="window-header">WEBRINGS</div>
                     <div class="window-body" style="text-align: center;">
-                        <p style="font-size: 0.7rem; margin-bottom: 5px;">WiiRing</p>
-                        <div style="border: 1px solid #ccc; padding: 10px; background: #f9f9f9;">
-                            <span style="font-size: 1.5rem;">⚇</span>
+                        <p style="font-size: 0.7rem; margin-bottom: 5px; color: #8a5a65;">WiiRing</p>
+                        <div style="border: 1px solid #ffccd5; padding: 10px; background: #fff8f9;">
+                            <span style="font-size: 1.5rem; color: #ff85a1;">⚇</span>
                         </div>
                     </div>
                 </div>
@@ -235,14 +245,13 @@
                 <!-- Janela Principal -->
                 <div class="window">
                     <div class="window-header">WELCOME</div>
-                    <!-- Substitua o link da imagem abaixo pela sua imagem -->
                     <img src="https://images.unsplash.com/photo-1509114397022-ed747cca3f65?q=80&w=600" alt="Header Image" class="featured-img">
                     <div class="window-body">
-                        <h2 style="font-size: 1rem; margin-bottom: 8px;">hello . . . i'm <span style="background: #eee; padding: 0 4px;">clay</span>.</h2>
+                        <h2 style="font-size: 1rem; margin-bottom: 8px;">hello . . . i'm <span class="highlight">clay</span>.</h2>
                         <p style="font-size: 0.8rem; line-height: 1.4; margin-bottom: 10px;">
                             this is a personal website that i've been constructing off & on for roughly 3 years. i post blog entries and other things. enjoy your stay! ✶
                         </p>
-                        <p style="font-size: 0.7rem; color: #666;">This site was created solely for computer viewing in mind.</p>
+                        <p style="font-size: 0.7rem; color: #c97a8e;">This site was created solely for computer viewing in mind.</p>
                     </div>
                 </div>
 
