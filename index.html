@@ -307,14 +307,10 @@
                     <div class="window-header">NAVI</div>
                     <div class="window-body">
                         <ul class="nav-list">
-                            <li><a href="#">★ HOME</a></li>
-                            <li><a href="#">ABOUT</a></li>
-                            <li><a href="#">BLOG</a></li>
-                            <li><a href="#">PHOTOLOG</a></li>
-                            <li><a href="#">LINKS</a></li>
-                            <li><a href="#">SHRINES</a></li>
-                            <li><a href="#">DIRECTORY</a></li>
-                            <li><a href="#">GUESTBOOK</a></li>
+                            <li><a href="#"> ✦  HOME</a></li>
+                            <li><a href="#"> ✦  ABOUT</a></li>
+                            <li><a href="#"> ✦  RELATIONSHIPS</a></li>
+                            <li><a href="#"> ✦  GALERIA</a></li>
                         </ul>
                     </div>
                 </div>
@@ -398,43 +394,12 @@
 
         <!-- FOOTER -->
         <footer>
-            <p>★ claiey // 2022-2025 ★</p>
+            <p>★   vincent      2026   ★</p>
             <p>you're visitor #</p>
         </footer>
 
     </div>
-
-    <!-- =====================================
-         SCRIPT DO SLIDESHOW
-    ====================================== -->
-    <script>
-        // Certifique-se de salvar suas imagens no mesmo diretório do arquivo HTML
-        const imagensCole = [
-            "cole1.jpg",
-            "cole2.jpg",
-            "cole3.jpg",
-            "cole4.jpg",
-            "cole5.jpg"
-        ];
-
-        const imagem = document.getElementById("cole-image");
-        let imagemAtual = 0;
-        const tempoTroca = 3000; // Tempo em milissegundos (3000 = 3 segundos)
-
-        setInterval(() => {
-            // Inicia a transição de saída (fade out)
-            imagem.style.opacity = "0";
-
-            setTimeout(() => {
-                // Alterna a imagem
-                imagemAtual = (imagemAtual + 1) % imagensCole.length;
-                imagem.src = imagensCole[imagemAtual];
-
-                // Inicia a transição de entrada (fade in)
-                imagem.style.opacity = "1";
-            }, 600); // 600ms igual ao tempo da transição no CSS
-        }, tempoTroca);
-    </script>
-
+    
+    <script src="script.js"></script>
 </body>
 </html>
