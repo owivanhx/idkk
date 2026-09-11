@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Lista com o caminho de cada imagem
+    // Caminho exato das imagens na pasta banner
     const imagensCole = [
         "banner/cole1.jpg",
         "banner/cole2.jpg",
@@ -10,23 +10,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const imagem = document.getElementById("cole-image");
     
-    // Verifica se a imagem existe na página antes de executar
+    // Cancela a execução se a tag não for encontrada
     if (!imagem) return;
 
     let imagemAtual = 0;
-    const tempoTroca = 3000; // Tempo em milissegundos (3 segundos)
+    const tempoTroca = 3000; // Troca a cada 3 segundos
 
     setInterval(() => {
-        // Inicia o efeito de esmaecimento (fade out)
+        // Esconde a imagem (fade out)
         imagem.style.opacity = "0";
 
         setTimeout(() => {
-            // Avança para a próxima imagem da lista
+            // Alterna o índice da imagem
             imagemAtual = (imagemAtual + 1) % imagensCole.length;
             imagem.src = imagensCole[imagemAtual];
 
-            // Reaparece com a nova imagem (fade in)
+            // Exibe a imagem (fade in)
             imagem.style.opacity = "1";
-        }, 600); // 600ms bate com o tempo de transition do CSS
+        }, 600); // Aguarda o fim da transição CSS
     }, tempoTroca);
 });
