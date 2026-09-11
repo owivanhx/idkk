@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Lista com o caminho de cada imagem
     const imagensCole = [
-        "cole1.jpg",
-        "cole2.jpg",
-        "cole3.jpg",
-        "cole4.jpg",
-        "cole5.jpg"
+        "banner/cole1.jpg",
+        "banner/cole2.jpg",
+        "banner/cole3.jpg",
+        "banner/cole4.jpg",
+        "banner/cole5.jpg"
     ];
 
     const imagem = document.getElementById("cole-image");
